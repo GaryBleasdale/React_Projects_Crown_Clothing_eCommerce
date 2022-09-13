@@ -1,0 +1,39 @@
+.categories-container{
+  display:flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  .card-container{
+    height:250px;
+    width:250px;
+    padding: 20px;
+    transform: translateZ(0);
+    .category-container{
+      height:100%;
+      width:100%;
+      background-position: center;
+      background-size: cover;  
+      display:flex;
+      justify-content: center;
+      align-items: center;
+      transition: all .5s;
+      &:hover{
+        transform: scale(1.2);
+        transition: all .5s;
+        opacity:0.8;
+      }
+      .text-container{
+        display:flex;
+        flex-direction: column;
+        align-items: center;
+        background-color: rgba(255,255,255,0.8);
+        text-transform: capitalize;
+        padding: 10px;
+        border-radius: 3px;
+      }
+    }  
+  }
+}
+
+
+
+
