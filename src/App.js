@@ -1,11 +1,19 @@
 import React from "react";
-import Directory from "./Components/Directory/Directory";
+import './index.scss'
+import HomeRoute from "./Routes/home/Home.route";
+import { Routes, Route } from "react-router-dom";
+import Navbar from "./Components/Navbar/Navbar";
 
 
 const App =()=> {
   
   return (
-    <Directory />
+    <Routes>
+      <Route path='/' element={<Navbar />}>
+        <Route index element={< HomeRoute/>} />
+      </Route>   
+    </Routes>
+
   );
 }
 
